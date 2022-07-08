@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/spacing_small"
+    android:paddingTop="12dp"
+    android:paddingEnd="@dimen/spacing_normal"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/tv_letter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_r80"
+        android:backgroundTint="?colorSurfaceVariant"
+        android:gravity="center"
+        android:maxLength="1"
+        android:maxLines="1"
+        android:padding="@dimen/spacing_tiny"
+        android:textAppearance="?textAppearanceHeadlineSmall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="A" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_normal"
+        android:layout_marginEnd="@dimen/spacing_normal"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?textAppearanceTitleMedium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_letter"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="John" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

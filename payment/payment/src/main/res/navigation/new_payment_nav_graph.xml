@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_payment_nav_graph"
+    app:startDestination="@id/selectPartyBottomSheet">
+
+    <dialog
+        android:id="@+id/selectPartyBottomSheet"
+        android:name="com.flobiz.android.payment.ui.SelectPartyBottomSheet"
+        android:label="SelectPartyBottomSheet"
+        tools:layout="@layout/fragment_parties">
+        <action
+            android:id="@+id/to_new_payment"
+            app:destination="@id/newPaymentFragment" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/newPaymentFragment"
+        android:name="com.flobiz.android.payment.ui.NewPaymentFragment"
+        android:label="NewPaymentFragment"
+        tools:layout="@layout/fragment_new_payment" />
+
+</navigation>

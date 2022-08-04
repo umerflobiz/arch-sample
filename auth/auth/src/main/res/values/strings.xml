@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Login</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+
+<!--    TODO-->
+    <string name="you_have_n_credits">You have %s credits</string>
+</resources>

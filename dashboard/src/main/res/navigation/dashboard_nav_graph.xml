@@ -7,8 +7,10 @@
 
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="com.flobiz.android.dashboard.DashboardFragment"
+        android:name="com.flobiz.android.dashboard.ui.DashboardFragment"
         android:label="DashboardFragment"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard">
+        <deepLink app:uri="myApp://archsample.com/dashboard" />
+    </fragment>
 
 </navigation>

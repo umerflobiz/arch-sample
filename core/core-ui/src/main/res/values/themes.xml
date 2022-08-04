@@ -4,5 +4,6 @@
         <item name="android:statusBarColor">?colorSurface</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
         <item name="materialButtonStyle">@style/App.Button</item>
+        <item name="loadingButtonStyle">@style/Widget.ArchSample.LoadingButton</item>
     </style>
 </resources>

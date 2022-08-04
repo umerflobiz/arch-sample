@@ -14,10 +14,12 @@ dependencyResolutionManagement {
 }
 rootProject.name = "arch-sample"
 include ':app'
-include ':auth'
+include ':auth:auth'
+include ':auth:auth-shared'
 include ':dashboard'
 include ':payment:payment-shared'
 include ':payment:payment'
 include ':party-shared'
 include ':core:core'
 include ':core:core-ui'
+include ':navigation'

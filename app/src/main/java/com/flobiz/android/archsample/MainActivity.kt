@@ -6,11 +6,13 @@ import androidx.core.view.isVisible
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.flobiz.android.archsample.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 import com.flobiz.android.auth.R as AuthR
 import com.flobiz.android.dashboard.R as DashboardR
 import com.flobiz.android.partyshared.R as PartyR
 import com.flobiz.android.payment.R as PaymentR
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -25,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         val navGraph =
             navHostFragment.navController.navInflater.inflate(R.navigation.main_nav_graph)
         val navController = navHostFragment.navController
-        navGraph.setStartDestination(DashboardR.id.dashboard_nav_graph)
+        navGraph.setStartDestination(AuthR.id.auth_nav_graph)
         navController.graph = navGraph
 
         setupBottomNav(navController)
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             binding.navView.isVisible = when (destination.id) {
                 DashboardR.id.dashboardFragment,
-                PaymentR.id.paymentFragment,
+                PaymentR.id.paymentsFragment,
                 PartyR.id.partiesFragment -> true
                 else -> false
             }

@@ -6,4 +6,5 @@
     <string name="recipient">Recipient:</string>
     <string name="recipient_name">Recipient: %s</string>
     <string name="ac_number">A/c No.: %s</string>
+    <string name="please_enter_amount">Please enter amount</string>
 </resources>
